@@ -1,0 +1,14 @@
+{
+  "name": "winston-example",
+  "version": "1.0.0",
+  "description": "윈스턴 로거 적용 예제",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.11.0"
+  }
+}
