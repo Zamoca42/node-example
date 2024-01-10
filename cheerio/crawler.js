@@ -13,6 +13,11 @@ const getHtml = async(keyword) => {
 
 // 가져온 웹 페이지에서 강의 제목을 추출해서 배열에 담기
 const parsing = async (keyword) => {
+    if (!keyword) {
+        logger.error("검색어를 입력하세요.");
+        return;
+    }
+
     const html = await getHtml(keyword);
     const $ = cheerio.load(html.data);
     const $courseList = $(".course_card_item");
@@ -35,4 +40,4 @@ const getCourse = async(keyword) => {
     console.log(result);
 }
 
-getCourse("NestJS");
+getCourse();
