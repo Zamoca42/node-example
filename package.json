@@ -12,6 +12,8 @@
     "express": "^4.18.2"
   },
   "workspaces": [
-    "router-example"
+    "router-example",
+    "winston-example",
+    "cheerio-example"
   ]
 }
